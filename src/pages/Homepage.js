@@ -2,47 +2,48 @@ import { useCallback } from "react";
 import { Button } from "@mui/material";
 
 const Homepage = () => {
+
   const onProductsTextClick = useCallback(() => {
-    // Please sync "Events Page" to the project
+    console.log("Clicked on Products");
   }, []);
 
   const onAboutTextClick = useCallback(() => {
-    // Please sync "Desktop - 4" to the project
+    
   }, []);
 
   const onFrameButtonClick = useCallback(() => {
-    // Please sync "Events Page" to the project
+    
   }, []);
 
   const onBuyATicketClick = useCallback(() => {
-    // Please sync "Desktop - 7" to the project
+    
   }, []);
 
   const onRectangle1Click = useCallback(() => {
-    // Please sync "Desktop - 7" to the project
+    
   }, []);
 
   const onRectangle2Click = useCallback(() => {
-    // Please sync "Desktop - 7" to the project
+    
   }, []);
 
   const onMoreEventsTextClick = useCallback(() => {
-    // Please sync "Events Page" to the project
+    console.log('More events');
   }, []);
 
   const onRectangle4Click = useCallback(() => {
-    // Please sync "Desktop - 7" to the project
+    
   }, []);
 
   return (
-    <div className="relative bg-lavender w-full h-[1048px] overflow-hidden text-left text-xl text-white font-karma">
+    <div className="relative bg-lavender w-full h-[1048px] overflow-hidden text-left text-sm text-xl text-white font-karma ">
       <img
         className="absolute top-[94px] left-[0px] w-[1440px] h-[473px] object-cover"
         alt=""
         src="/hd-wallpaper--silhouette-of-people-inside-stage-human-person-crowd-concert-1@2x.png"
       />
       <div
-        className="absolute top-[21px] left-[852px] text-13xl font-playball text-black flex items-center w-[171px] h-[53px] cursor-pointer"
+        className="absolute top-[21px] left-[852px] text-13xl font-playball text-black flex items-center w-[171px] h-[53px] cursor-pointer text-center sm:text-left"
         onClick={onProductsTextClick}
       >
         Products
@@ -76,6 +77,7 @@ const Homepage = () => {
           <p className="m-0"> hottest events in town.</p>
         </span>
       </div>
+
       <Button
         className="absolute top-[425px] left-[22px] cursor-pointer"
         color="primary"
@@ -84,6 +86,7 @@ const Homepage = () => {
       >
         Buy a ticket
       </Button>
+
       <i className="absolute top-[585px] left-[0px] text-13xl font-bold font-nunito text-black">
         Featured events
       </i>
@@ -118,9 +121,11 @@ const Homepage = () => {
         className="absolute top-[880px] left-[862px] rounded-8xs bg-rosybrown w-[132px] h-[30px] cursor-pointer"
         onClick={onRectangle1Click}
       />
+      
       <div className="absolute top-[880px] left-[875px] font-medium text-center flex items-center justify-center w-[107px] h-8">
         Buy a ticket
       </div>
+
       <div
         className="absolute top-[880px] left-[1231px] rounded-8xs bg-rosybrown w-[132px] h-[30px] cursor-pointer"
         onClick={onRectangle2Click}
@@ -150,6 +155,7 @@ const Homepage = () => {
         </span>
       </div>
     </div>
+    
   );
 };
 
